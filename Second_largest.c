@@ -1,15 +1,15 @@
 #include<stdio.h>
 #include<limits.h>
 int main() {
-	int n,i;
-	printf("Enter the size of array: ");
-	scanf("%d",&n);
-	int arr[n];
-	printf("Enter the elements of array: \n");
-	for(i=0; i<n; i++)
-	{
-		scanf("%d",&arr[i]);
+	int n=5;
+	int i;
+	printf("Size of array: %d\n",n);
+	int arr[5]= {88,99,77,66,55};
+	printf("The elements of array: ",arr);
+	for(i=0; i<n; i++) {
+		printf("%d ",arr[i]);
 	}
+	printf("\n ");
 	int largest=INT_MIN;
 	int secondLargest=INT_MIN;
 	for(i=0; i<n; i++)
@@ -22,7 +22,7 @@ int main() {
 			secondLargest=arr[i];
 		}
 	}
-	printf("Second largest element: %d",secondLargest);
+	printf("\nSecond largest element: %d",secondLargest);
 	return 0;
 
 }
